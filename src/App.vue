@@ -27,7 +27,7 @@
     },
     methods: {
       getResult(keyword) {
-        fetch('https://api.themoviedb.org/3/search/movie?api_key=9436950aed01e5d0f8d81b8672c7a6be&language=en-US&query=' + keyword +'&page=1&include_adult=false')
+        fetch('https://api.themoviedb.org/3/search/movie?api_key=<<api_key>>&language=en-US&query=' + keyword +'&page=1&include_adult=false')
         .then(response => response.json())
         .then(response => {
           console.log(response)
